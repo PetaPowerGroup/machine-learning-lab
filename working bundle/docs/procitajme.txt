@@ -1,0 +1,12 @@
+odvoji.exe 5 
+
+ovaj program radi tako da iz "skup_svih_znacajki.txt" uzme prvih 5 uzoraka za svaku klasu,
+i spremi ih u "skup_za_ucenje.txt", a preostalih 3 spremi u "skup_za_testiranje.txt"
+
+
+odvoji2.exe 1234 456
+
+ovaj program radi tako da iz "skup_svih_znacajki.txt" uzme 1,2,3,4 uzorak za svaku klasu
+i spremi ih u "skup_za_ucenje.txt", a 4,5,6, uzorke spremi u "skup_za_testiranje.txt" , 
+dakle prvi niz brojeva su uzorci za uèenje, a drugi niz uzorci za testiranje. Ako u neki 
+skup ne želimo ni jedan uzorak potrebno je upisati 0. 
