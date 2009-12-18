@@ -4,13 +4,23 @@ ovaj program radi tako da iz svih ".csv" datoteka u trenutnom direktoriju uz pom
 "uzorak_razred.txt" , zapiše sve uzorke u pravom obliku u "skup_svih_znacajki.txt"
 
 
-odvoji1.exe 5 
+odvoji.exe 50%
+
+ovaj program radi tako da iz "skup_svih_znacajki.txt" uzme prvih 50% uzoraka za svaku 
+klasu,i spremi ih u "skup_za_ucenje.txt", a preostale spremi u "skup_za_testiranje.txt".
+Primjer za parne brojeve: 50% -> ukupno 4 uzorka -> 2 uèenje, 2 testiranje
+Primjer za neparne brojeve: 50% -> ukupno 3 uzorka -> 1 uèenje, 2 testiranje
+dakle sve uzorke koji su ispod i jednako zadanom postotku stavi u uèenje.
+5/9 = 0,55 > 0,5 , dakle peti od devet uzorka ide u testiranje. 
+
+
+odvoji1.exe 5   - ne koristiti 8
 
 ovaj program radi tako da iz "skup_svih_znacajki.txt" uzme prvih 5 uzoraka za svaku klasu,
 i spremi ih u "skup_za_ucenje.txt", a preostalih 3 spremi u "skup_za_testiranje.txt"
 
 
-odvoji2.exe 1234 456
+odvoji2.exe 1234 456  
 
 ovaj program radi tako da iz "skup_svih_znacajki.txt" uzme 1,2,3,4 uzorak za svaku klasu
 i spremi ih u "skup_za_ucenje.txt", a 4,5,6, uzorke spremi u "skup_za_testiranje.txt" , 
