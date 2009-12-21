@@ -1,0 +1,52 @@
+##
+##  KONFIGURACIJSJA DATOTEKA za skriptu koja kontrolira pojedine dijelove aplikacije
+##
+
+
+# direktorij gdje se nalazi glazba za uèenje i testiranje
+D:\mjuza\drazen-baza
+
+# tipovi glazbe koji se žele podržati (ostali se ignoriraju) - sonic annotator isto mora podržavati tip
+.mp3 .wav
+
+# žanrovi koji se žele podržavati
+classical,rock,jazz
+
+# naziv datoteke u koju æe se zapisati pripadnost datoteke razredu (NE MIJENJATI)
+uzorak_razred.txt
+
+# željena metoda za odreðivanje žanra: folder ili id3
+# ili na eng...
+# desired method for determining the actual genre (for validation purposes): "folder" or "id3"
+# with "folder" all the songs are supposed to be in a folder of it's genre's name
+# with "id3" the value is extracted from id3 tags
+folder
+
+# pozovi sonic annotator (ovisno o broju datoteka može trajati jako dugo): 1 ili 0
+# ako se zada 0, potrebno je ruèno kopirati neke unaprijed izraèunate znaèajke
+0
+
+# naredba koja se koristi za sonic annotator (bez staze do foldera s muzikom, to se konkatenira na kraj)
+sonic-annotator.exe -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r
+
+# naredba za skaliranje
+svm-scale.exe -l 0 -u 1
+
+# klasifikator: libsvm ili krešvm
+# "libsvm" znaèi koristi biblioteku libsvm
+# "kreshvm" je naš klasifikator
+libsvm
+
+# naredba za libsvm-ov svm-train
+svm-train -s 0 -c 100 -g 0.1 -v 5
+
+# naredba za treniranje našeg klasifikatora kreshvm
+#
+#
+kreshvm_train.exe 64 5 2 5
+
+# testiranje našeg klasifikatora
+kreshvm_test.exe
+
+#naredba za odvajanje skupa podataka na uèenje i testiranje
+odvoji.exe 80%
