@@ -4,13 +4,13 @@
 
 
 # direktorij gdje se nalazi glazba za uèenje i testiranje
-D:\mjuza\drazen-baza
+D:\mjuza\ismir
 
 # tipovi glazbe koji se žele podržati (ostali se ignoriraju) - sonic annotator isto mora podržavati tip
 .mp3 .wav
 
 # žanrovi koji se žele podržavati
-classical,rock,jazz
+classical,electronic,rock,jazz,metal,pop,punk,world
 
 # naziv datoteke u koju æe se zapisati pripadnost datoteke razredu (NE MIJENJATI)
 uzorak_razred.txt
@@ -35,7 +35,7 @@ svm-scale.exe -l 0 -u 1
 # klasifikator: libsvm ili kreshvm
 # "libsvm" znaèi koristi biblioteku libsvm
 # "kreshvm" je naš klasifikator
-libsvm
+kreshvm
 
 # naredba za libsvm-ov svm-train
 svm-train -s 0 -c 100 -g 0.1 -v 5
@@ -43,7 +43,7 @@ svm-train -s 0 -c 100 -g 0.1 -v 5
 # naredba za treniranje našeg klasifikatora kreshvm
 #
 #
-kreshvm_train.exe 64 5 2 5
+kreshvm_train.exe 63 5 2 5
 
 # testiranje našeg klasifikatora
 kreshvm_test.exe

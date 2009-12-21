@@ -1,24 +1,94 @@
+-------------------
+Arhitektura sustava
+-------------------
+
+U našem projektu aplikaciju smo razvijali tako da smo razbili funkcionalnost na više manjih modula koji obavljaju toèno odreðene zadatke.
+
+Sama aplikacija Music Genre Classifier je tako u stvari samo jedna skripta koja kao ulaz prima konfiguracijsku datoteku "conf-file.txt" i poziva kontrolira sve druge module (poziva ih).
+
+Arhitektura ovog sustava se najbolje može vidjeti iz grafièkog prikaza.
+
+-------------slika arhitekture Sonic Annotatora-------------
+
+U sljedeæim cjelinama se ukratko s visoke razine objašnjavaju detalji pojedinih modula.
+
+
+Sonic Annotator
+
+Jedini modul koji nismo sami implementirali, veæ smo koristili gotov produkt. Detalji korištenja Sonic Annotatora nalaze se u odgovarajuæem poglavlju. Ukratko - kao izlaz daje datoteku za svaku pjesmu s dobivenim vrijednostima znaèajki.
+
+ID3/kazalo izluèivaè žanrova
+
+Dio je same skripte prevedene u izvršnu datoteku "Music Genre Classifier.exe". Rekurzivno èita sve datoteke iz ulaznog glazbenog kazala i odreðuje "pravi" žanr svake pjesme (koja je jednog od podržanih formata - zadano u "conf-file.txt") na jedan od 2 naèina:
+- èitajuæi "genre" id3 tag glazbene datoteke
+- gledajuæi naziv vršnog kazala (dakle pretpostavlja se da su sve pjesme "rock" žanra negdje u kazalu naziva "rock")
+
+
 -----------------------------------------------------
 Sonic Annotator i Vamp plugins - izluèivanje znaèajki
 -----------------------------------------------------
 
+Sonic Annotator
 
+Sonic Annotator (ranije znan kao “Runner”) je program naredbenog retka (engl. command line) za izluèivanje glazbenih znaèajka iz više glazbenih datoteka. Osnovna ideja je pružiti proces izvlaèenja znaèajki, a pritom sakriti konkretne metode, koristeæi Vamp prikljuèke (engl. Vamp plugins) za izluèivanje znaèajki. Izlazni formati su RDF, CSV (zarezom odvojene vrijednosti, engl. comma separated values).
+
+-------------slika arhitekture Sonic Annotatora-------------
+
+Sonic annotator kao ulaz koristi:
+- RDF datoteku (tzv. kostur, engl. skeleton) koje opisuju Vamp prikljuèke na koje se treba spojiti.
+- lokaciju glazbenih datoteka koje treba obraditi (mogu biti èak i na Internetu)
+
+Izlaz je skup .csv datoteka (ili drugaèijih, ovisi kako se zada) za svaku pjesmu i svaku znaèajku koje sadrže vrijednosti tih (što te vrijednosti toèno znaèe, zavisi od korištenih znaèajki).
+
+Vamp plugins
+
+Vamp je sustav prikljuèaka za obradu zvuka koji izluèuje opisne informacije iz zvuènih podataka - drugim rijeèima vrši zvuènu analizu ili izluèivanje znaèajki.
+
+-------------slika arhitekture Vamp prikljuèaka-------------
+
+U našem projektu nisu bili direktno korišteni, veæ kroz Sonic Annotator, na koji se može gledati kao suèelje prema ovim prikljuècima.
+
+Prikljuèci koje smo instalirali za potrebe projekta su "Vamp libxtract plugins".
+To su prikljuèci za izluèivanje znaèajki niske razine koji koriste libxtract biblioteku Jamiea Bullocka kako bi pružili oko 50 spektralnih i drugih znaèajki.
+
+Korištene znaèajke
+
+Pri testiranju smo kao znaèajke koristili mfcc (engl. Mel-frequency cepstral coefficients), koje se i u literaturi preporuèaju za klasifikaciju glazbe. Raèunali smo ih na 3 intervala trajanja 5 sekundi u razlièitim dijelovima pjesme (<0,5> sec, <20,25> sec i <50,55> sec).
+
+Dobivanje znaèajki mfccom je pobliže objašnjeno u teorijskom dijelu dokumentacije.
+
+Sonic Annotator smo koristili naredbom:
+sonic-annotator.exe -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r <staza-do-kazala>
+
+Datoteka "mfcc" je kostur za istoimeni Vamp prikljuèak, a dobiva se izvoðenjem naredbe:
+sonic-annotator -s vamp:vamp-libxtract:mfcc:mfcc > mfcc 
+
+Oznake "mean", "summary-only" i "segments" služe da se smanji inaèe jako velik broj vrijednosti. Segments odreðuje granice za vremenske intervale u kojima se onda svake sekunde radi sažetak (engl. summary) tako da se izraèuna aritmetièka sredina (engl. mean) svih vrijednosti.
+
+U projektu smo kasnije parsirali izlazne .csv datoteke i uzeli samo vrijednosti iz 3 prije spomenuta intervala (zanemarujuæi ostale intervale, npr. <5,20> sec).
+
+Tim procesom za svaku glazbenu datoteku (pod uvjetom da je duža od 55 sekundi) dobijemo 63 znaèajke. Za SVM klasifikator se i inaèe preporuèa stotinjak vrijednosti po uzorku.
 
 ---------------------------------
 Upute za instalaciju i korištenje
 ---------------------------------
 
-Kako aplikacija zavisi o programu Sonic Annotator za izvlaèenje znaèajki iz glazbenih datoteka, a Sonic Annotator nadalje koristi Vamp prikljuèke (engl. Vamp plugins), potrebno je imati Vamp prikljuèke na toèno zadanom mjestu.
+Kako aplikacija zavisi o programu Sonic Annotator za izvlaèenje znaèajki iz glazbenih datoteka, a Sonic Annotator nadalje koristi Vamp prikljuèke (engl. Vamp plugins), potrebno je imati Vamp prikljuèke na toèno zadanom mjestu. Sam Sonic Annotator ne treba posebno instalirati jer je to samo jedna izvršna datoteka koja se nalazi u "working bundle" kazalu.
 
 Instalacija Vamp prikljuèaka
 
--TODO
+1) skinite željene Vamp prikljuèke (u projektu smo koristili libxtract) sa ove 
+stranice<http://www.vamp-plugins.org/download.html>
+2) raspakirajte .rar i stavite .dll i .cat u kazalo "Program Files\Vamp Plugins" - 
+ako koristite 64-bite Windows OS umjesto prethodnog koristite kazalo "Program Files (x86)\Vamp Plugins" 
+3) testirajte dostupnost Vamp prikljuèaka tako što u naredbenom retku (engl. command prompt) postavite kazalo na "working bundle" (gdje je i sonic-annotator.exe) i pokrenete Sonic Annotator naredbom:  *sonic-annotator.exe -l* 
+(ukoliko se ne ispisuju razni vamp:libxtract prikljuèci onda nešto ije prošlo dobro u koraku 2) 
 
 Pokretanje aplikacije
 
 Sve izvršne datoteke (i jedna konfiguracijska) potrebne za pokretanje aplikacije (Sonic Annotator takoðer) dostupne su u kazalu "working bundle".
 
-Glavna skripta koja kontrolira sve druge dijelove programa je prevedena u izvršnu datoteku "music_genre_classifier.exe". Potpunu funkcionalnost programa moguæe je vidjeti njenim pokretanjem.
+Glavna skripta koja kontrolira sve druge dijelove programa je prevedena u izvršnu datoteku "music_genre_classifier.exe". Potpunu funkcionalnost programa moguæe je vidjeti njenim pokretanjem (najbolje u naredbenom retku za bolji pregled ispisa).
 
 Konfiguracijska datoteka
 
