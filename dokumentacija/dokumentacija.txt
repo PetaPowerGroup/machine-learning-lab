@@ -1,0 +1,118 @@
+-----------------------------------------------------
+Sonic Annotator i Vamp plugins - izluèivanje znaèajki
+-----------------------------------------------------
+
+
+
+---------------------------------
+Upute za instalaciju i korištenje
+---------------------------------
+
+Kako aplikacija zavisi o programu Sonic Annotator za izvlaèenje znaèajki iz glazbenih datoteka, a Sonic Annotator nadalje koristi Vamp prikljuèke (engl. Vamp plugins), potrebno je imati Vamp prikljuèke na toèno zadanom mjestu.
+
+Instalacija Vamp prikljuèaka
+
+-TODO
+
+Pokretanje aplikacije
+
+Sve izvršne datoteke (i jedna konfiguracijska) potrebne za pokretanje aplikacije (Sonic Annotator takoðer) dostupne su u kazalu "working bundle".
+
+Glavna skripta koja kontrolira sve druge dijelove programa je prevedena u izvršnu datoteku "music_genre_classifier.exe". Potpunu funkcionalnost programa moguæe je vidjeti njenim pokretanjem.
+
+Konfiguracijska datoteka
+
+Sve postavke i parametre aplikacije podešava se kroz tekstualnu datoteku "conf-file.txt". U komentarima datoteke objašnjeno je ukratko što toèno koji parametar znaèi i koje su moguæe vrijednosti.
+
+NAPOMENA: poredak redaka u konfiguracijskoj datoteci je bitan i ne smije ga se mijenjati!
+
+Primjer izgleda konfiguracijske datoteke:
+
+##
+##  KONFIGURACIJSKA DATOTEKA za skriptu koja kontrolira pojedine dijelove aplikacije
+##
+
+
+# direktorij gdje se nalazi glazba za uèenje i testiranje
+D:\glazba
+
+# tipovi glazbe koji se žele podržati (ostali se ignoriraju) - sonic annotator isto mora podržavati tip
+.mp3 .wav
+
+# žanrovi koji se žele podržavati
+classical,rock,jazz
+
+# naziv datoteke u koju æe se zapisati pripadnost datoteke razredu (NE MIJENJATI)
+uzorak_razred.txt
+
+# željena metoda za odreðivanje žanra: folder ili id3
+# ili na eng...
+# desired method for determining the actual genre (for validation purposes): "folder" or "id3"
+# with "folder" all the songs are supposed to be in a folder of it's genre's name
+# with "id3" the value is extracted from id3 tags
+folder
+
+# pozovi sonic annotator (ovisno o broju datoteka može trajati jako dugo): 1 ili 0
+# ako se zada 0, potrebno je ruèno kopirati neke unaprijed izraèunate znaèajke
+1
+
+# naredba koja se koristi za sonic annotator (bez staze do foldera s muzikom, to se konkatenira na kraj)
+sonic-annotator.exe -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r
+
+# naredba za skaliranje
+svm-scale.exe -l 0 -u 1
+
+# klasifikator: libsvm ili kreshvm
+# "libsvm" znaèi koristi biblioteku libsvm
+# "kreshvm" je naš klasifikator
+kreshvm
+
+# naredba za libsvm-ov svm-train
+svm-train -s 0 -c 100 -g 0.1 -v 5
+
+# naredba za treniranje našeg klasifikatora kreshvm
+#
+#
+kreshvm_train.exe 64 5 2 5
+
+# testiranje našeg klasifikatora
+kreshvm_test.exe
+
+#naredba za odvajanje skupa podataka na uèenje i testiranje
+odvoji.exe 80%
+
+
+Obrazac korištenja aplikacije 1 - testiranje klasifikacije
+
+Pretpostavimo da se na raèunalu pod "D:\glazba" nalaze 3 kazala "jazz", "classical" i "rock" u kojima se dalje nalaze kazala izvoðaèa i albuma (proizvoljne dubine, npr. "D:\glazba\rock\Led Zeppelin\The Song Remains The Same\Rain Song.mp3" je dozvoljena staza), a negdje u njima razne glazbene datoteke odgovarajuæeg žanra (dakle sve rock pjesme su negdje u folderu "rock").
+
+Mi želimo nauèiti SVM s 80% tih glazbenih datoteka (ravnomjerno odabranih pripadnika svakog žanra) i testirati ga s preostalih 20%.
+
+Tada postavljamo sljedeæe parametre konfiguracijske datoteke conf-file.txt:
+- ulazni glazbeni direktorij - D:\glazba
+- žanrovi koji se žele podržavati - jazz,rock,classical
+(moraju se poklapati s kazalima žanrova)
+- željena metoda za odreðivanje žanra - folder
+(zato što kazalo (engl. folder) odreðuje ispravni žanr, a ne id3 tag)
+- naredba za odvajanje skupa podataka na uèenje i testiranje - odvoji.exe 80%
+- pozovi sonic annotator - 1
+(ako nemamo od prije izraèunate znaèajke za glazbene datoteke)
+- klasifikator - kreshvm
+(ovo je naš klasifikator pa vjerojatno njega želimo testirati)
+
+Ostale vrijednosti su parametri drugim dijelovima aplikacije te su detaljnije objašnjene u drugim dijelovima dokumentacije, a pretpostavljene vrijednosti bi trebale biti dovoljno dobre u veæini sluèajeva.
+
+Kako to toèno zapisati u "conf-file.txt" vidljivo je u prethodnom odjeljku jer upravo ta datoteka odgovara ovom primjeru.
+
+Nakon što smo to podesili dovoljno je pokrenuti "music_genre_classifier.exe" i ako sve odradi dobro, na kraju æe se ispisati postotak uspješno klasificiranih testnih glazbenih datoteka (onih 20% koje nisu bile korištene za uèenje SVM-a).
+
+
+Obrazac korištenja aplikacije 2 - ponovno testiranje s drugim parametrima - ubrzanje
+
+Recimo da želimo promijeniti neki parametar i ponovno testirati klasifikator, s novim parametarom korištenim pri uèenju. Daleko najsporiji dio rada aplikacije je izluèivanje znaèajki uz pomoæ Sonic Annotatora.
+
+Da ne bi ponovno morali èekati vrlo dug proces obrade glazbenih datoteka, možemo ubrzati proces tako da ne pozivamo Sonic Annotator.
+
+To se postavlja u konfiguracijskoj datoteci pišuæi pod pozovi sonic annotator - 0
+
+NAPOMENA: ukoliko se želi koristiti ovo ubrzanje, u kazalu "working bundle" zajedno s izvršnim datotekama moraju biti .csv datoteke toèno svih onih glazbenih datoteka iz kazala koje je zadano u konfiguracijskoj datoteci (koje æe se koristiti pri uèenju i testiranju) - one su nam još uvijek potrebne kako bi iz id3 podataka ili naziva kazala odredili toèan razred, samo što je taj proces puno brži.
