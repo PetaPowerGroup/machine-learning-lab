@@ -1,5 +1,5 @@
 ##
-##  KONFIGURACIJSJA DATOTEKA za skriptu koja kontrolira pojedine dijelove aplikacije
+##  KONFIGURACIJSKA DATOTEKA za skriptu koja kontrolira pojedine dijelove aplikacije
 ##
 
 
@@ -32,7 +32,7 @@ sonic-annotator.exe -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w c
 # naredba za skaliranje
 svm-scale.exe -l 0 -u 1
 
-# klasifikator: libsvm ili krešvm
+# klasifikator: libsvm ili kreshvm
 # "libsvm" znaèi koristi biblioteku libsvm
 # "kreshvm" je naš klasifikator
 libsvm

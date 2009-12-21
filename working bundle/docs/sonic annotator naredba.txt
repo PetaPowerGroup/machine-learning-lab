@@ -1,1 +1,0 @@
-sonic-annotator -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r D:\mjuza\ismir
