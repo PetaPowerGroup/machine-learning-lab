@@ -1,36 +1,300 @@
-05 Savall, Le Concert des Nations - Canon 2 a 2 Violini in unisono.mp3>>1
-08 Savall, Le Concert des Nations - Ricercar a 6.mp3>>1
-101 Kommt, ihr Töchter.mp3>>1
-103 Herzliebster Jesu.mp3>>1
-108 Da das Jesus merkete, sprach er zu ihnen.mp3>>1
-109 Du lieber Heiland du.mp3>>1
-11 Savall, Le Concert des Nations - III. Andante.mp3>>1
-110 Buß' und Reu'.mp3>>1
-112 Blute nur, du liebes Herz.mp3>>1
-14 Savall, Le Concert des Nations - Canon 1 a 2 Quaerendo inventietis (9B).mp3>>1
-16 Savall, Le Concert des Nations - Fuga canonica in Epidiapente (6).mp3>>1
-18 Savall, Le Concert des Nations - Canon perpetuus per just intervali (8).mp3>>1
-01 Eastside.mp3>>2
-01 They Say It's Wonderful.mp3>>2
-02 Dedicated to You.mp3>>2
-02 Give Me Your Love.mp3>>2
-03 Get What You Want.mp3>>2
-03 My One and Only Love.mp3>>2
-04 Could've Done It Better.mp3>>2
-04 Lush Life.mp3>>2
-05 This Type of Funk.mp3>>2
-05 You Are Too Beautiful.mp3>>2
-06 Autumn Serenade.mp3>>2
-06 Pocketful of Soul.mp3>>2
-01 GOOD TIMES BAD TIMES.mp3>>3
-01 Seven Nation Army.mp3>>3
-02 BABE I AM GONNA LEAVE YOU.mp3>>3
-02 Black Math.mp3>>3
-03 There's No Home for You Here.mp3>>3
-03 TOU SHOOK ME.mp3>>3
-04 DAZED AND CONFUSED.mp3>>3
-04 I Just Don't Know What to Do With Myself.mp3>>3
-05 In the Cold, Cold Night.mp3>>3
-05 YOUR TIME IS GONNA COME.mp3>>3
-06 BLACK MOUNTAIN SIDE.mp3>>3
-06 I Want to Be the Boy to Warm Your Mother's Heart.mp3>>3
+blues&00000.mp3>>1
+blues&00001.mp3>>1
+blues&00002.mp3>>1
+blues&00003.mp3>>1
+blues&00004.mp3>>1
+blues&00005.mp3>>1
+blues&00006.mp3>>1
+blues&00007.mp3>>1
+blues&00008.mp3>>1
+blues&00009.mp3>>1
+blues&00010.mp3>>1
+blues&00011.mp3>>1
+blues&00012.mp3>>1
+blues&00013.mp3>>1
+blues&00014.mp3>>1
+blues&00015.mp3>>1
+blues&00016.mp3>>1
+blues&00017.mp3>>1
+blues&00018.mp3>>1
+blues&00019.mp3>>1
+blues&00020.mp3>>1
+blues&00021.mp3>>1
+blues&00022.mp3>>1
+blues&00023.mp3>>1
+blues&00024.mp3>>1
+blues&00025.mp3>>1
+blues&00026.mp3>>1
+blues&00027.mp3>>1
+blues&00028.mp3>>1
+blues&00029.mp3>>1
+blues&00030.mp3>>1
+blues&00031.mp3>>1
+blues&00032.mp3>>1
+blues&00033.mp3>>1
+blues&00034.mp3>>1
+blues&00035.mp3>>1
+blues&00036.mp3>>1
+blues&00037.mp3>>1
+blues&00038.mp3>>1
+blues&00039.mp3>>1
+blues&00040.mp3>>1
+blues&00041.mp3>>1
+blues&00042.mp3>>1
+blues&00043.mp3>>1
+blues&00044.mp3>>1
+blues&00045.mp3>>1
+blues&00046.mp3>>1
+blues&00047.mp3>>1
+blues&00048.mp3>>1
+blues&00049.mp3>>1
+blues&00050.mp3>>1
+blues&00051.mp3>>1
+blues&00052.mp3>>1
+blues&00053.mp3>>1
+blues&00054.mp3>>1
+blues&00055.mp3>>1
+blues&00056.mp3>>1
+blues&00057.mp3>>1
+blues&00058.mp3>>1
+blues&00059.mp3>>1
+blues&00060.mp3>>1
+blues&00061.mp3>>1
+blues&00062.mp3>>1
+blues&00063.mp3>>1
+blues&00064.mp3>>1
+blues&00065.mp3>>1
+blues&00066.mp3>>1
+blues&00067.mp3>>1
+blues&00068.mp3>>1
+blues&00069.mp3>>1
+blues&00070.mp3>>1
+blues&00071.mp3>>1
+blues&00072.mp3>>1
+blues&00073.mp3>>1
+blues&00074.mp3>>1
+blues&00075.mp3>>1
+blues&00076.mp3>>1
+blues&00077.mp3>>1
+blues&00078.mp3>>1
+blues&00079.mp3>>1
+blues&00080.mp3>>1
+blues&00081.mp3>>1
+blues&00082.mp3>>1
+blues&00083.mp3>>1
+blues&00084.mp3>>1
+blues&00085.mp3>>1
+blues&00086.mp3>>1
+blues&00087.mp3>>1
+blues&00088.mp3>>1
+blues&00089.mp3>>1
+blues&00090.mp3>>1
+blues&00091.mp3>>1
+blues&00092.mp3>>1
+blues&00093.mp3>>1
+blues&00094.mp3>>1
+blues&00095.mp3>>1
+blues&00096.mp3>>1
+blues&00097.mp3>>1
+blues&00098.mp3>>1
+blues&00099.mp3>>1
+classical&00000.mp3>>2
+classical&00001.mp3>>2
+classical&00002.mp3>>2
+classical&00003.mp3>>2
+classical&00004.mp3>>2
+classical&00005.mp3>>2
+classical&00006.mp3>>2
+classical&00007.mp3>>2
+classical&00008.mp3>>2
+classical&00009.mp3>>2
+classical&00010.mp3>>2
+classical&00011.mp3>>2
+classical&00012.mp3>>2
+classical&00013.mp3>>2
+classical&00014.mp3>>2
+classical&00015.mp3>>2
+classical&00016.mp3>>2
+classical&00017.mp3>>2
+classical&00018.mp3>>2
+classical&00019.mp3>>2
+classical&00020.mp3>>2
+classical&00021.mp3>>2
+classical&00022.mp3>>2
+classical&00023.mp3>>2
+classical&00024.mp3>>2
+classical&00025.mp3>>2
+classical&00026.mp3>>2
+classical&00027.mp3>>2
+classical&00028.mp3>>2
+classical&00029.mp3>>2
+classical&00030.mp3>>2
+classical&00031.mp3>>2
+classical&00032.mp3>>2
+classical&00033.mp3>>2
+classical&00034.mp3>>2
+classical&00035.mp3>>2
+classical&00036.mp3>>2
+classical&00037.mp3>>2
+classical&00038.mp3>>2
+classical&00039.mp3>>2
+classical&00040.mp3>>2
+classical&00041.mp3>>2
+classical&00042.mp3>>2
+classical&00043.mp3>>2
+classical&00044.mp3>>2
+classical&00045.mp3>>2
+classical&00046.mp3>>2
+classical&00047.mp3>>2
+classical&00048.mp3>>2
+classical&00049.mp3>>2
+classical&00050.mp3>>2
+classical&00051.mp3>>2
+classical&00052.mp3>>2
+classical&00053.mp3>>2
+classical&00054.mp3>>2
+classical&00055.mp3>>2
+classical&00056.mp3>>2
+classical&00057.mp3>>2
+classical&00058.mp3>>2
+classical&00059.mp3>>2
+classical&00060.mp3>>2
+classical&00061.mp3>>2
+classical&00062.mp3>>2
+classical&00063.mp3>>2
+classical&00064.mp3>>2
+classical&00065.mp3>>2
+classical&00066.mp3>>2
+classical&00067.mp3>>2
+classical&00068.mp3>>2
+classical&00069.mp3>>2
+classical&00070.mp3>>2
+classical&00071.mp3>>2
+classical&00072.mp3>>2
+classical&00073.mp3>>2
+classical&00074.mp3>>2
+classical&00075.mp3>>2
+classical&00076.mp3>>2
+classical&00077.mp3>>2
+classical&00078.mp3>>2
+classical&00079.mp3>>2
+classical&00080.mp3>>2
+classical&00081.mp3>>2
+classical&00082.mp3>>2
+classical&00083.mp3>>2
+classical&00084.mp3>>2
+classical&00085.mp3>>2
+classical&00086.mp3>>2
+classical&00087.mp3>>2
+classical&00088.mp3>>2
+classical&00089.mp3>>2
+classical&00090.mp3>>2
+classical&00091.mp3>>2
+classical&00092.mp3>>2
+classical&00093.mp3>>2
+classical&00094.mp3>>2
+classical&00095.mp3>>2
+classical&00096.mp3>>2
+classical&00097.mp3>>2
+classical&00098.mp3>>2
+classical&00099.mp3>>2
+pop&00000.mp3>>8
+pop&00001.mp3>>8
+pop&00002.mp3>>8
+pop&00003.mp3>>8
+pop&00004.mp3>>8
+pop&00005.mp3>>8
+pop&00006.mp3>>8
+pop&00007.mp3>>8
+pop&00008.mp3>>8
+pop&00009.mp3>>8
+pop&00010.mp3>>8
+pop&00011.mp3>>8
+pop&00012.mp3>>8
+pop&00013.mp3>>8
+pop&00014.mp3>>8
+pop&00015.mp3>>8
+pop&00016.mp3>>8
+pop&00017.mp3>>8
+pop&00018.mp3>>8
+pop&00019.mp3>>8
+pop&00020.mp3>>8
+pop&00021.mp3>>8
+pop&00022.mp3>>8
+pop&00023.mp3>>8
+pop&00024.mp3>>8
+pop&00025.mp3>>8
+pop&00026.mp3>>8
+pop&00027.mp3>>8
+pop&00028.mp3>>8
+pop&00029.mp3>>8
+pop&00030.mp3>>8
+pop&00031.mp3>>8
+pop&00032.mp3>>8
+pop&00033.mp3>>8
+pop&00034.mp3>>8
+pop&00035.mp3>>8
+pop&00036.mp3>>8
+pop&00037.mp3>>8
+pop&00038.mp3>>8
+pop&00039.mp3>>8
+pop&00040.mp3>>8
+pop&00041.mp3>>8
+pop&00042.mp3>>8
+pop&00043.mp3>>8
+pop&00044.mp3>>8
+pop&00045.mp3>>8
+pop&00046.mp3>>8
+pop&00047.mp3>>8
+pop&00048.mp3>>8
+pop&00049.mp3>>8
+pop&00050.mp3>>8
+pop&00051.mp3>>8
+pop&00052.mp3>>8
+pop&00053.mp3>>8
+pop&00054.mp3>>8
+pop&00055.mp3>>8
+pop&00056.mp3>>8
+pop&00057.mp3>>8
+pop&00058.mp3>>8
+pop&00059.mp3>>8
+pop&00060.mp3>>8
+pop&00061.mp3>>8
+pop&00062.mp3>>8
+pop&00063.mp3>>8
+pop&00064.mp3>>8
+pop&00065.mp3>>8
+pop&00066.mp3>>8
+pop&00067.mp3>>8
+pop&00068.mp3>>8
+pop&00069.mp3>>8
+pop&00070.mp3>>8
+pop&00071.mp3>>8
+pop&00072.mp3>>8
+pop&00073.mp3>>8
+pop&00074.mp3>>8
+pop&00075.mp3>>8
+pop&00076.mp3>>8
+pop&00077.mp3>>8
+pop&00078.mp3>>8
+pop&00079.mp3>>8
+pop&00080.mp3>>8
+pop&00081.mp3>>8
+pop&00082.mp3>>8
+pop&00083.mp3>>8
+pop&00084.mp3>>8
+pop&00085.mp3>>8
+pop&00086.mp3>>8
+pop&00087.mp3>>8
+pop&00088.mp3>>8
+pop&00089.mp3>>8
+pop&00090.mp3>>8
+pop&00091.mp3>>8
+pop&00092.mp3>>8
+pop&00093.mp3>>8
+pop&00094.mp3>>8
+pop&00095.mp3>>8
+pop&00096.mp3>>8
+pop&00097.mp3>>8
+pop&00098.mp3>>8
+pop&00099.mp3>>8

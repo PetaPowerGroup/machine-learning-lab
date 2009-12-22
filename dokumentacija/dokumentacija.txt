@@ -8,7 +8,7 @@ Sama aplikacija Music Genre Classifier je tako u stvari samo jedna skripta koja 
 
 Arhitektura ovog sustava se najbolje može vidjeti iz grafièkog prikaza.
 
--------------slika arhitekture Sonic Annotatora-------------
+-------------slika arhitekture našeg sustava-------------
 
 U sljedeæim cjelinama se ukratko s visoke razine objašnjavaju detalji pojedinih modula.
 
