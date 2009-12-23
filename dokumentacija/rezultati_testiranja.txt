@@ -1,3 +1,13 @@
+Upute: prvi rezultat iza prve strelice (->) su 
+rezultati koje sam dobio prvi put. Iza druge strelice 
+zadnji broj u redu su novi rezutltati koji se mogu
+ponoviti. Nije mi jasno kako sam prije dobio one 
+rezultate, a radio sam sve isto :S
+Dakle rezutlati koji vrijede su oni zadnji u svakom
+redu.
+
+
+
 gtzan       // mg
 
 kreshvm    linearni
@@ -5,15 +15,15 @@ kreshvm    linearni
 svi razredi (10) -mfcc
 
 kreshvm_train.exe 63 5 1
-za uèenje 10% uzoraka   -> rezultat 26,55 %
-za uèenje 20% uzoraka   -> rezultat  31 %
-za uèenje 30% uzoraka   -> rezultat 28,28 %
-za uèenje 40% uzoraka   -> rezultat 22,66 %
-za uèenje 50% uzoraka   -> rezultat 29,4 %
-za uèenje 60% uzoraka   -> rezultat 35,25 %
-za uèenje 70% uzoraka   -> rezultat 38,33 %
-za uèenje 80% uzoraka   -> rezultat 40,5 %
-za uèenje 90% uzoraka   -> rezultat 41 %
+za uèenje 10% uzoraka   -> rezultat 26,55 % -> 14 %
+za uèenje 20% uzoraka   -> rezultat  31 %   -> 25,12 %
+za uèenje 30% uzoraka   -> rezultat 28,28 % -> 21,14 %
+za uèenje 40% uzoraka   -> rezultat 22,66 % -> 22,83 %
+za uèenje 50% uzoraka   -> rezultat 29,4 %  -> 26 %
+za uèenje 60% uzoraka   -> rezultat 35,25 % -> 27,75 %
+za uèenje 70% uzoraka   -> rezultat 38,33 % -> 31,33 %
+za uèenje 80% uzoraka   -> rezultat 40,5 %  -> 36,5 %
+za uèenje 90% uzoraka   -> rezultat 41 %    -> 50 %
 
 ===========================================
 
@@ -24,32 +34,36 @@ kreshvm    linearni
 svi razredi (10)  -mfcc
 
 za uèenje 20% uzoraka
-kreshvm_train.exe 63 6 1 -> 31,32 %
-kreshvm_train.exe 63 5 1 -> 31 %
-kreshvm_train.exe 63 4 1 -> 32,37 %
-kreshvm_train.exe 63 3 1 -> 32 %
-kreshvm_train.exe 63 2 1 -> 30,12 %
-kreshvm_train.exe 63 1 1 -> 29,87 %
+kreshvm_train.exe 63 6 1 -> 31,32 % -> 24 %
+kreshvm_train.exe 63 5 1 -> 31 %    -> 25,12 % 
+kreshvm_train.exe 63 4 1 -> 32,37 % -> 25,5 %
+kreshvm_train.exe 63 3 1 -> 32 %    -> 27,25 %
+kreshvm_train.exe 63 2 1 -> 30,12 % -> 30,12 %
+kreshvm_train.exe 63 1 1 -> 29,87 % -> 29,62 %
 
-kreshvm_train.exe 63 3.2 1 -> 32,37%
-kreshvm_train.exe 63 3.4 1 -> 31,87 %
-kreshvm_train.exe 63 3.6 1 -> 32,5 %
-kreshvm_train.exe 63 3.8 1 -> 32,25 %
+kreshvm_train.exe 63 3.2 1 -> 32,37%  -> 27,75 %
+kreshvm_train.exe 63 3.4 1 -> 31,87 % -> 26,5 %
+kreshvm_train.exe 63 3.6 1 -> 32,5 %  -> 25,87 %
+kreshvm_train.exe 63 3.8 1 -> 32,25 % -> 26 %
 
 
 
 za uèenje 90% uzoraka
-kreshvm_train.exe 63 6 1 -> 37 %
-kreshvm_train.exe 63 5 1 -> 41 %
-kreshvm_train.exe 63 4 1 -> 41 %
-kreshvm_train.exe 63 3 1 -> 43 %
-kreshvm_train.exe 63 2 1 -> 52 %
-kreshvm_train.exe 63 1 1 -> 50 %
+kreshvm_train.exe 63 6 1 -> 37 % -> 50 %
+kreshvm_train.exe 63 5 1 -> 41 % -> 50 %
+kreshvm_train.exe 63 4 1 -> 41 % -> 52 %
+kreshvm_train.exe 63 3 1 -> 43 % -> 51 %
+kreshvm_train.exe 63 2 1 -> 52 % -> 49 %
+kreshvm_train.exe 63 1 1 -> 50 % -> 51 %
 
-kreshvm_train.exe 63 1.2 1 -> 50 %
-kreshvm_train.exe 63 1.4 1 -> 52 %
-kreshvm_train.exe 63 1.6 1 -> 50 %
-kreshvm_train.exe 63 1.8 1 -> 51 %
+kreshvm_train.exe 63 1.2 1 -> 50 % -> 51 %
+kreshvm_train.exe 63 1.4 1 -> 52 % -> 50 %
+kreshvm_train.exe 63 1.6 1 -> 50 % -> 49 %
+kreshvm_train.exe 63 1.8 1 -> 51 % -> 50 %
+
+
+za kreshvm linearni najbolji rezultat je 52% 
+za 90% uzoraka za uèenje, i parametre 63 4 1 
 
 ppppppppppppppppppppppppppppppppppppppppppppppp
 
@@ -64,28 +78,37 @@ svi razredi (10) -mfcc
 za uèenje 90% uzoraka
 
 drugi stupanj
-kreshvm_train.exe 63 1 3 2 -> 39 %
-kreshvm_train.exe 63 2 3 2 -> 40 %
-kreshvm_train.exe 63 3 3 2 -> 44 %
-kreshvm_train.exe 63 4 3 2 -> 43 %
+kreshvm_train.exe 63 1 3 2 -> 39 % -> 39 %
+kreshvm_train.exe 63 2 3 2 -> 40 % -> 40 %
+kreshvm_train.exe 63 3 3 2 -> 44 % -> 36 %
+kreshvm_train.exe 63 4 3 2 -> 43 % -> 33 %
 
 treci stupanj
-kreshvm_train.exe 63 0.1 3 3 -> 45 %
-kreshvm_train.exe 63 1 3 3 -> 46 %
-kreshvm_train.exe 63 2 3 3 -> 46 %
-kreshvm_train.exe 63 3 3 3 -> 46 %
-kreshvm_train.exe 63 4 3 3 -> 46 %
+kreshvm_train.exe 63 0.1 3 3 -> 45 % -> 33 % 
+kreshvm_train.exe 63 1 3 3 -> 46 % -> 28 %
+kreshvm_train.exe 63 2 3 3 -> 46 % -> 28 %
+kreshvm_train.exe 63 3 3 3 -> 46 % -> 28 %
+kreshvm_train.exe 63 4 3 3 -> 46 % -> 28 %
 
 cetvrti stupanj
-kreshvm_train.exe 63 1 3 4 -> 46 %
+kreshvm_train.exe 63 1 3 4 -> 46 % -> 28 %
 
 peti stupanj
-kreshvm_train.exe 63 1 3 5 -> 49 %
+kreshvm_train.exe 63 1 3 5 -> 49 % -> 29 %
 
 sesti stupanj
-kreshvm_train.exe 63 1 3 6 -> 50 %
+kreshvm_train.exe 63 1 3 6 -> 50 % -> 29 %
 
 sedmi stupanj
-kreshvm_train.exe 63 1 3 7 -> 49 %
+kreshvm_train.exe 63 1 3 7 -> 49 % -> 28 %
+
+
+za kreshvm polinomijalni najbolji rezultat je 40% 
+za 90% uzoraka za uèenje, i parametre 63 2 3 2
 
 IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+
+
+
+razredi 1,4,10 daju najlošije rezutlate
