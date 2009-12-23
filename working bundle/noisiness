@@ -1,0 +1,24 @@
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix vamp:     <http://purl.org/ontology/vamp/> .
+@prefix :         <#> .
+
+:transform_plugin a vamp:Plugin ;
+    vamp:identifier "noisiness" .
+
+:transform_library a vamp:PluginLibrary ;
+    vamp:identifier "vamp-libxtract" ;
+    vamp:available_plugin :transform_plugin .
+
+:transform a vamp:Transform ;
+    vamp:plugin :transform_plugin ;
+    vamp:step_size "1024"^^xsd:int ; 
+    vamp:block_size "1024"^^xsd:int ; 
+    vamp:parameter_binding [
+        vamp:parameter [ vamp:identifier "harmonic-threshold" ] ;
+        vamp:value "0.1"^^xsd:float ;
+    ] ;
+    vamp:parameter_binding [
+        vamp:parameter [ vamp:identifier "peak-threshold" ] ;
+        vamp:value "10"^^xsd:float ;
+    ] ;
+    vamp:output [ vamp:identifier "noisiness" ] .
