@@ -1,0 +1,55 @@
+gtzan 
+
+kreshvm    linearni
+
+svi uzorci
+
+kreshvm_train.exe 63 5 1
+za uèenje 10% uzoraka   -> rezultat 26,55 %
+za uèenje 20% uzoraka   -> rezultat  31 %
+za uèenje 30% uzoraka   -> rezultat 28,28 %
+za uèenje 40% uzoraka   -> rezultat 22,66 %
+za uèenje 50% uzoraka   -> rezultat 29,4 %
+za uèenje 60% uzoraka   -> rezultat 35,25 %
+za uèenje 70% uzoraka   -> rezultat 38,33 %
+za uèenje 80% uzoraka   -> rezultat 40,5 %
+za uèenje 90% uzoraka   -> rezultat 41 %
+
+===========================================
+
+gtzan 
+
+kreshvm    linearni
+
+svi uzorci
+
+za uèenje 20% uzoraka
+kreshvm_train.exe 63 6 1 -> 31,32 %
+kreshvm_train.exe 63 5 1 -> 31 %
+kreshvm_train.exe 63 4 1 -> 32,37 %
+kreshvm_train.exe 63 3 1 -> 32 %
+kreshvm_train.exe 63 2 1 -> 30,12 %
+kreshvm_train.exe 63 1 1 -> 29,87 %
+
+kreshvm_train.exe 63 3.2 1 -> 32,37%
+kreshvm_train.exe 63 3.4 1 -> 31,87 %
+kreshvm_train.exe 63 3.6 1 -> 32,5 %
+kreshvm_train.exe 63 3.8 1 -> 32,25 %
+
+
+
+za uèenje 90% uzoraka
+kreshvm_train.exe 63 6 1 -> 37 %
+kreshvm_train.exe 63 5 1 -> 41 %
+kreshvm_train.exe 63 4 1 -> 41 %
+kreshvm_train.exe 63 3 1 -> 43 %
+kreshvm_train.exe 63 2 1 -> 52 %
+kreshvm_train.exe 63 1 1 -> 50 %
+
+kreshvm_train.exe 63 1.2 1 -> 50 %
+kreshvm_train.exe 63 1.4 1 -> 52 %
+kreshvm_train.exe 63 1.6 1 -> 50 %
+kreshvm_train.exe 63 1.8 1 -> 51 %
+
+ppppppppppppppppppppppppppppppppppppppppppppppp
+
