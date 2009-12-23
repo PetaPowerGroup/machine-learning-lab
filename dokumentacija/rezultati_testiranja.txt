@@ -2,7 +2,7 @@ gtzan       // mg
 
 kreshvm    linearni
 
-svi razredi (10)
+svi razredi (10) -mfcc
 
 kreshvm_train.exe 63 5 1
 za uèenje 10% uzoraka   -> rezultat 26,55 %
@@ -21,7 +21,7 @@ gtzan        // mg
 
 kreshvm    linearni
 
-svi razredi (10)
+svi razredi (10)  -mfcc
 
 za uèenje 20% uzoraka
 kreshvm_train.exe 63 6 1 -> 31,32 %
@@ -59,7 +59,7 @@ gtzan          //mg
 
 kresvm  polinomijalni 
 
-svi razredi (10)
+svi razredi (10) -mfcc
 
 za uèenje 90% uzoraka
 
