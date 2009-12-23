@@ -1,8 +1,8 @@
-gtzan 
+gtzan       // mg
 
 kreshvm    linearni
 
-svi uzorci
+svi razredi (10)
 
 kreshvm_train.exe 63 5 1
 za uèenje 10% uzoraka   -> rezultat 26,55 %
@@ -17,11 +17,11 @@ za uèenje 90% uzoraka   -> rezultat 41 %
 
 ===========================================
 
-gtzan 
+gtzan        // mg
 
 kreshvm    linearni
 
-svi uzorci
+svi razredi (10)
 
 za uèenje 20% uzoraka
 kreshvm_train.exe 63 6 1 -> 31,32 %
@@ -53,3 +53,39 @@ kreshvm_train.exe 63 1.8 1 -> 51 %
 
 ppppppppppppppppppppppppppppppppppppppppppppppp
 
+----------------------------------------------
+
+gtzan          //mg
+
+kresvm  polinomijalni 
+
+svi razredi (10)
+
+za uèenje 90% uzoraka
+
+drugi stupanj
+kreshvm_train.exe 63 1 3 2 -> 39 %
+kreshvm_train.exe 63 2 3 2 -> 40 %
+kreshvm_train.exe 63 3 3 2 -> 44 %
+kreshvm_train.exe 63 4 3 2 -> 43 %
+
+treci stupanj
+kreshvm_train.exe 63 0.1 3 3 -> 45 %
+kreshvm_train.exe 63 1 3 3 -> 46 %
+kreshvm_train.exe 63 2 3 3 -> 46 %
+kreshvm_train.exe 63 3 3 3 -> 46 %
+kreshvm_train.exe 63 4 3 3 -> 46 %
+
+cetvrti stupanj
+kreshvm_train.exe 63 1 3 4 -> 46 %
+
+peti stupanj
+kreshvm_train.exe 63 1 3 5 -> 49 %
+
+sesti stupanj
+kreshvm_train.exe 63 1 3 6 -> 50 %
+
+sedmi stupanj
+kreshvm_train.exe 63 1 3 7 -> 49 %
+
+IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
