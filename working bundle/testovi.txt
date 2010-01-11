@@ -1,0 +1,232 @@
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=4.3
+c = 5
+tocno klasificirano= 21 ukupno uzoraka= 200
+uspjesnost = 10.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=4.3
+c = 5
+tocno klasificirano= 21 ukupno uzoraka= 200
+uspjesnost = 10.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 5
+tocno klasificirano= 79 ukupno uzoraka= 200
+uspjesnost = 39.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 5
+tocno klasificirano= 79 ukupno uzoraka= 200
+uspjesnost = 39.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.5
+tocno klasificirano= 95 ukupno uzoraka= 200
+uspjesnost = 47.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=4.3
+c = 0.5
+tocno klasificirano= 20 ukupno uzoraka= 200
+uspjesnost = 10%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.7
+c = 0.5
+tocno klasificirano= 72 ukupno uzoraka= 200
+uspjesnost = 36%
+--------------------------------------------------------------------------------------
+========================================================
+
+
+
+linearni
+------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.1
+tocno klasificirano= 62 ukupno uzoraka= 200
+uspjesnost = 31%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 1
+tocno klasificirano= 85 ukupno uzoraka= 200
+uspjesnost = 42.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 5
+tocno klasificirano= 79 ukupno uzoraka= 200
+uspjesnost = 39.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 4
+tocno klasificirano= 75 ukupno uzoraka= 200
+uspjesnost = 37.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 3
+tocno klasificirano= 79 ukupno uzoraka= 200
+uspjesnost = 39.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 2
+tocno klasificirano= 81 ukupno uzoraka= 200
+uspjesnost = 40.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 1.5
+tocno klasificirano= 84 ukupno uzoraka= 200
+uspjesnost = 42%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 1.3
+tocno klasificirano= 89 ukupno uzoraka= 200
+uspjesnost = 44.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 1.2
+tocno klasificirano= 86 ukupno uzoraka= 200
+uspjesnost = 43%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 1.1
+tocno klasificirano= 87 ukupno uzoraka= 200
+uspjesnost = 43.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.9
+tocno klasificirano= 86 ukupno uzoraka= 200
+uspjesnost = 43%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.8
+tocno klasificirano= 89 ukupno uzoraka= 200
+uspjesnost = 44.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.5
+tocno klasificirano= 95 ukupno uzoraka= 200
+uspjesnost = 47.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.6
+tocno klasificirano= 96 ukupno uzoraka= 200
+uspjesnost = 48%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.7
+tocno klasificirano= 94 ukupno uzoraka= 200
+uspjesnost = 47%
+--------------------------------------------------------------------------------------
+=========== lin _ najbolje - c = 0.6  ; 48%
+
+
+poli:
+----------------------------------
+ velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 96 ukupno uzoraka= 200
+uspjesnost = 48%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=2
+c = 0.6
+tocno klasificirano= 58 ukupno uzoraka= 200
+uspjesnost = 29%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=3
+c = 0.6
+tocno klasificirano= 49 ukupno uzoraka= 200
+uspjesnost = 24.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=4
+c = 0.6
+tocno klasificirano= 46 ukupno uzoraka= 200
+uspjesnost = 23%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=2
+c = 1
+tocno klasificirano= 59 ukupno uzoraka= 200
+uspjesnost = 29.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=2
+c = 2
+tocno klasificirano= 52 ukupno uzoraka= 200
+uspjesnost = 26%
+--------------------------------------------------------------------------------------
+
+
+=================================================
+rbf
+------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 0.6
+tocno klasificirano= 63 ukupno uzoraka= 200
+uspjesnost = 31.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.9
+c = 0.6
+tocno klasificirano= 65 ukupno uzoraka= 200
+uspjesnost = 32.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.8
+c = 0.6
+tocno klasificirano= 68 ukupno uzoraka= 200
+uspjesnost = 34%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.7
+c = 0.6
+tocno klasificirano= 69 ukupno uzoraka= 200
+uspjesnost = 34.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.5
+c = 0.6
+tocno klasificirano= 77 ukupno uzoraka= 200
+uspjesnost = 38.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.4
+c = 0.6
+tocno klasificirano= 83 ukupno uzoraka= 200
+uspjesnost = 41.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.3
+c = 0.6
+tocno klasificirano= 84 ukupno uzoraka= 200
+uspjesnost = 42%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.35
+c = 3
+tocno klasificirano= 81 ukupno uzoraka= 200
+uspjesnost = 40.5%
+--------------------------------------------------------------------------------------
