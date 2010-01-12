@@ -338,3 +338,9 @@ c = 2
 tocno klasificirano= 93 ukupno uzoraka= 200
 uspjesnost = 46.5%
 --------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 50
+tocno klasificirano= 68 ukupno uzoraka= 200
+uspjesnost = 34%
+--------------------------------------------------------------------------------------

@@ -48,7 +48,7 @@ svm-train -s 0 -c 100 -g 0.1 -v 5
 # kreshvm_train.exe 63 0.5 1
 # kreshvm_train parametri
 # drugi parametar - konstanta C
-2
+50
 
 
 # drugi parametar - tip svm-a
@@ -58,7 +58,7 @@ svm-train -s 0 -c 100 -g 0.1 -v 5
 2
 
 # treæi parametar - gama za rbf, stupanj za polinomni kernel, nebitno za linearni svm
-0.08
+0.1
 
 # testiranje našeg klasifikatora
 kreshvm_test.exe
