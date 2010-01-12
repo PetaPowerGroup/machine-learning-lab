@@ -230,3 +230,111 @@ c = 3
 tocno klasificirano= 81 ukupno uzoraka= 200
 uspjesnost = 40.5%
 --------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 1
+tocno klasificirano= 81 ukupno uzoraka= 200
+uspjesnost = 40.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.2
+c = 1
+tocno klasificirano= 89 ukupno uzoraka= 200
+uspjesnost = 44.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.3
+c = 1
+tocno klasificirano= 87 ukupno uzoraka= 200
+uspjesnost = 43.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.4
+c = 1
+tocno klasificirano= 83 ukupno uzoraka= 200
+uspjesnost = 41.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.5
+c = 1
+tocno klasificirano= 83 ukupno uzoraka= 200
+uspjesnost = 41.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.6
+c = 1
+tocno klasificirano= 79 ukupno uzoraka= 200
+uspjesnost = 39.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.7
+c = 1
+tocno klasificirano= 74 ukupno uzoraka= 200
+uspjesnost = 37%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.8
+c = 1
+tocno klasificirano= 71 ukupno uzoraka= 200
+uspjesnost = 35.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 93 ukupno uzoraka= 200
+uspjesnost = 46.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.2
+c = 2
+tocno klasificirano= 89 ukupno uzoraka= 200
+uspjesnost = 44.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.3
+c = 2
+tocno klasificirano= 87 ukupno uzoraka= 200
+uspjesnost = 43.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.4
+c = 2
+tocno klasificirano= 83 ukupno uzoraka= 200
+uspjesnost = 41.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.5
+c = 2
+tocno klasificirano= 78 ukupno uzoraka= 200
+uspjesnost = 39%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.6
+c = 2
+tocno klasificirano= 72 ukupno uzoraka= 200
+uspjesnost = 36%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.01
+c = 2
+tocno klasificirano= 43 ukupno uzoraka= 200
+uspjesnost = 21.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.05
+c = 2
+tocno klasificirano= 88 ukupno uzoraka= 200
+uspjesnost = 44%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.07
+c = 2
+tocno klasificirano= 91 ukupno uzoraka= 200
+uspjesnost = 45.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.08
+c = 2
+tocno klasificirano= 93 ukupno uzoraka= 200
+uspjesnost = 46.5%
+--------------------------------------------------------------------------------------
