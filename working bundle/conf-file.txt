@@ -4,7 +4,7 @@
 
 
 # direktorij gdje se nalazi glazba za uèenje i testiranje
-D:\mjuza\gtzan
+D:\mjuza\drazen-jednostavna-baza
 
 
 # tipovi glazbe koji se žele podržati (ostali se ignoriraju) - sonic annotator isto mora podržavati tip
@@ -29,7 +29,7 @@ folder
 0
 
 # naredba koja se koristi za sonic annotator (bez staze do foldera s muzikom, to se konkatenira na kraj)
- sonic-annotator.exe -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r
+sonic-annotator.exe -t mfcc -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r
 #sonic-annotator.exe -t nonzero_count -S mean --summary-only --segments 5,12,17,24,29 -w csv --csv-force --csv-basedir . -r
 
 # naredba za skaliranje
@@ -38,7 +38,7 @@ svm-scale.exe -l 0 -u 1
 # klasifikator: libsvm ili kreshvm
 # "libsvm" znaèi koristi biblioteku libsvm
 # "kreshvm" je naš klasifikator
-kreshvm
+libsvm
 
 # naredba za libsvm-ov svm-train
 svm-train -s 0 -c 100 -g 0.1 -v 5
@@ -48,17 +48,17 @@ svm-train -s 0 -c 100 -g 0.1 -v 5
 # kreshvm_train.exe 63 0.5 1
 # kreshvm_train parametri
 # drugi parametar - konstanta C
-50
+0.6
 
 
 # drugi parametar - tip svm-a
 #  1 - linearni
 #  2 - rbf kernel
 #  3 - polinomni kernel
-2
+3
 
 # treæi parametar - gama za rbf, stupanj za polinomni kernel, nebitno za linearni svm
-0.1
+1
 
 # testiranje našeg klasifikatora
 kreshvm_test.exe

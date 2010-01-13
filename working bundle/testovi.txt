@@ -344,3 +344,201 @@ c = 50
 tocno klasificirano= 68 ukupno uzoraka= 200
 uspjesnost = 34%
 --------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 11 ukupno uzoraka= 12
+uspjesnost = 91.6667%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 5
+tocno klasificirano= 10 ukupno uzoraka= 12
+uspjesnost = 83.3333%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 0.6
+tocno klasificirano= 11 ukupno uzoraka= 12
+uspjesnost = 91.6667%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 11 ukupno uzoraka= 12
+uspjesnost = 91.6667%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 80 ukupno uzoraka= 141
+uspjesnost = 56.7376%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=4.6
+c = 6
+tocno klasificirano= 56 ukupno uzoraka= 141
+uspjesnost = 39.7163%
+--------------------------------------------------------------------------------------
+velicina uzorka = 225
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 20 ukupno uzoraka= 200
+uspjesnost = 10%
+--------------------------------------------------------------------------------------
+velicina uzorka = 225
+vrsta kernela = LINEAR
+c = 5
+tocno klasificirano= 29 ukupno uzoraka= 200
+uspjesnost = 14.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 93 ukupno uzoraka= 200
+uspjesnost = 46.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = LINEAR
+c = 5
+tocno klasificirano= 79 ukupno uzoraka= 200
+uspjesnost = 39.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 96 ukupno uzoraka= 200
+uspjesnost = 48%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=1
+c = 0.6
+tocno klasificirano= 61 ukupno uzoraka= 200
+uspjesnost = 30.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = RBF  gamma=0.1
+c = 0.6
+tocno klasificirano= 63 ukupno uzoraka= 200
+uspjesnost = 31.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 96 ukupno uzoraka= 200
+uspjesnost = 48%
+--------------------------------------------------------------------------------------
+velicina uzorka = 69
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 83 ukupno uzoraka= 200
+uspjesnost = 41.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 6
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 37 ukupno uzoraka= 200
+uspjesnost = 18.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 3
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 29 ukupno uzoraka= 200
+uspjesnost = 14.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 3
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 34 ukupno uzoraka= 200
+uspjesnost = 17%
+--------------------------------------------------------------------------------------
+velicina uzorka = 3
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 32 ukupno uzoraka= 200
+uspjesnost = 16%
+--------------------------------------------------------------------------------------
+velicina uzorka = 6
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 26 ukupno uzoraka= 200
+uspjesnost = 13%
+--------------------------------------------------------------------------------------
+velicina uzorka = 9
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 37 ukupno uzoraka= 200
+uspjesnost = 18.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 75
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 85 ukupno uzoraka= 200
+uspjesnost = 42.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 75
+vrsta kernela = RBF  gamma=0.1
+c = 2
+tocno klasificirano= 83 ukupno uzoraka= 200
+uspjesnost = 41.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 75
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 85 ukupno uzoraka= 200
+uspjesnost = 42.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 78 ukupno uzoraka= 200
+uspjesnost = 39%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = RBF  gamma=1
+c = 2
+tocno klasificirano= 52 ukupno uzoraka= 200
+uspjesnost = 26%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 78 ukupno uzoraka= 200
+uspjesnost = 39%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 141 ukupno uzoraka= 500
+uspjesnost = 28.2%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 114 ukupno uzoraka= 400
+uspjesnost = 28.5%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 101 ukupno uzoraka= 300
+uspjesnost = 33.6667%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 78 ukupno uzoraka= 200
+uspjesnost = 39%
+--------------------------------------------------------------------------------------
+velicina uzorka = 81
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 55 ukupno uzoraka= 100
+uspjesnost = 55%
+--------------------------------------------------------------------------------------
+velicina uzorka = 63
+vrsta kernela = POLINOMIAL p=1
+c = 0.6
+tocno klasificirano= 96 ukupno uzoraka= 200
+uspjesnost = 48%
+--------------------------------------------------------------------------------------
