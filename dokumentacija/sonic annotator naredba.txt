@@ -1,8 +1,13 @@
 Korisne sonic annotator naredbe
 
-sonic-annotator -t loudness -S mean --summary-only --segments 5,20,25,50,55 -w csv --csv-force --csv-basedir . -r D:\mjuza\ismir
+sonic-annotator -t loudness -S mean --summary-only --segments 0,5,12,17,24,29 -w csv --csv-force --csv-basedir . -r D:\mjuza\gtzan
+sonic-annotator.exe -t spectral_slope -S mean --summary-only --segments 5,12,17,24,29 -w csv --csv-force --csv-basedir . -r D:\mjuza\gtzan
 
 sonic-annotator -s vamp:vamp-libxtract:mfcc:mfcc > mfcc 
 sonic-annotator -s vamp:vamp-libxtract:loudness:loudness > loudness
 sonic-annotator -s vamp:vamp-libxtract:mean:mean > mean
 sonic-annotator -s vamp:vamp-libxtract:spectral_centroid:spectral_centroid > spectral_centroid
+sonic-annotator -s vamp:vamp-libxtract:nonzero_count:nonzero_count > nonzero_count
+sonic-annotator -s vamp:vamp-libxtract:noisiness:noisiness > noisiness
+sonic-annotator -s vamp:vamp-libxtract:spectral_slope:spectral_slope > spectral_slope
+sonic-annotator -s vamp:vamp-libxtract:spectral_standard_deviation:spectral_standard_deviation > spectral_standard_deviation
